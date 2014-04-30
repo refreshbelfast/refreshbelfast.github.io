@@ -1,0 +1,68 @@
+
+/* 700PX
+------------------------------------------------------------------------------------------------------------------------------------------ */
+
+@media only screen and (max-width:700px) {
+
+	.container {
+		width:90%
+	}
+
+	.sponsors {
+		li {
+			width: 30%;
+			margin-right: 1.3333%;
+			text-align: center;
+			
+			}
+		}
+
+}
+
+/* 600PX
+------------------------------------------------------------------------------------------------------------------------------------------ */
+
+@media only screen and (max-width:600px) {
+	.column {
+		width: 100%;
+		text-align: center;
+
+		p {text-align: center;}
+
+		.avatar {
+			float: none;
+			clear: both;
+			width: 40%;
+			margin: 10px 0 10px 0;
+		}
+
+		.host {
+			width: 50%;
+			float: left;
+			clear: none;
+			}
+	}
+
+
+}
+
+
+/* 600PX
+------------------------------------------------------------------------------------------------------------------------------------------ */
+
+@media only screen and (max-width:450px) {
+
+	.sponsors {
+		li {
+			width: 100%;
+			margin-right: 1.3333%;
+			text-align: center;
+			
+			}
+		}
+	.column {
+		.avatar {
+			width: 50%;
+		}
+	}
+}

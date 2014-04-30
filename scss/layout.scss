@@ -1,0 +1,252 @@
+/* COLOURS 
+------------------------------------------------------------------------------------------------------------------------------------------ */
+
+$fresh: 	#5cd4b9;
+$green: 	#18876e;
+
+
+/* TYPOGRAPHY
+------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+body {
+	font-family: "Proxima Nova", "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color: #444;
+	}
+
+.logo {
+	font-weight: normal;
+	font-size: 1.4em; /* 30/16 */
+	display: inline-block;
+	border-radius: 8px;
+	padding: 7px 8px 4px;
+	border: 1px solid white;
+	color: white;
+	margin-bottom: 30px;
+	clear: both;
+	font-weight: 100;
+
+	&:before {
+		content: "⌘";
+		font-size: 113%;
+		margin-top: -2px;
+		margin-right: -1px;
+		margin-bottom: -2px;
+		display: block;
+		float: left;
+		}
+	}
+
+h2 {
+	font-size: 2.25em; /* 36/16 */
+	color: white;
+	}
+
+h3 {
+	color: $fresh;
+	margin-bottom: 20px;
+	}
+
+h4 {
+	text-transform: uppercase;
+	letter-spacing: 0.125em; /* 2/16 */
+	margin-bottom: 20px;
+	}
+
+.date, 
+.location {
+	color: $green;
+	}
+
+.date {
+	font-size: 1.125em; /* 18/16 */
+	letter-spacing: 0.0625em; /* 1/16 */
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-bottom: 0;
+	text-align: center;
+	// margin-top: 10px;
+	}
+
+.location {
+	font-size: 0.875em; /* 14/16 */
+	font-weight: 600;
+	text-align: center;
+	}
+
+.lead {
+	font-size: 1.25em; /* 20/16 */
+	clear: both;
+	text-align: left;
+	}
+
+header .lead {
+	padding-top: 30px;
+	}
+
+em {
+	font-weight: 300;
+	}
+
+p {padding-bottom: 0.625em; text-align: left;} /* 10/16 */
+
+.button {
+	border-radius: 8px;
+	padding: 10px 25px;
+	border: 1px solid white;
+	font-size: 1.125em; /* 18/16 */
+	font-weight: 600;
+	margin-top: 20px;
+	display: inline-block;
+	text-align: center;
+	}
+
+a {
+	@include transition (all 150ms ease-in-out);
+	color: white;
+	text-decoration: none;
+	&:hover {
+		color: $fresh;
+		background-color: white;
+		}
+	}
+
+section a {
+	color: $fresh;
+	
+	&:hover {
+		color: darken($fresh, 20%);
+		}
+	}
+
+small {
+	clear: both;
+	font-size: 0.625em; /* 10/16 */
+	display: block;
+	text-align: center;
+	opacity: 0.5;
+	}
+
+/* IMAGES
+------------------------------------------------------------------------------------------------------------------------------------------ */
+
+header {
+	background-image: url("../images/bg.png");
+}
+
+.avatar {
+	border-radius: 50%;
+	}
+
+img {
+	max-width: 100%;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	}
+
+/* LAYOUT
+------------------------------------------------------------------------------------------------------------------------------------------ */
+
+header {
+	background-color:$fresh;
+	padding: 40px 0 50px 0;
+	color: white;
+	margin-bottom: 50px;
+	text-align: center;
+	}
+
+.container {
+	width: 640px;
+	margin: 0 auto;
+	}
+
+section {
+	padding-bottom: 40px;
+	}
+
+.column {
+	width: 30%;
+	margin-right: 3.3333%;
+	float: left;
+	margin-bottom: 20px;
+	}
+
+footer {
+	background-color: #404040;
+	margin-top: 40px;
+	color: #969696;
+	padding:40px 0;
+
+	.host {
+		clear: both;
+	
+		}
+
+	.avatar {
+		width: 25%;
+		float: left;
+		margin-right: 15px;
+		}
+
+	p, li {
+		padding-bottom: 0;
+		font-size: 0.875em; /* 14/16 */
+		}
+
+	.name {
+		font-size: 1.25em; /* 20/16 */
+		}
+
+	.company {
+		font-size: 0.75em; /* 12/16 */
+		font-weight: bold;
+		}
+	}
+
+
+/* LISTS
+------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.sponsors {
+	margin: 20px 0;
+
+	img {
+		// filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+  //   	filter: gray; /* IE6-9 */
+  //   	-webkit-filter: grayscale(1);
+    	opacity: 0.8;
+	}
+
+	li {
+		width: 33.3333%;
+		float: left;
+		display: block;
+		}
+	}	
+
+
+/* USEFUL CLASSES
+------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.last {
+	margin: 0;
+	}
+
+.left {
+	float: right;
+	}
+
+.right {
+	float: right;
+	}
+
+/* CLEARFIX */
+
+.group:after {
+	content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    }

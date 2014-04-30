@@ -1,0 +1,518 @@
+@charset "UTF-8";
+/*   
+Title: Refresh Belfast
+Author: Little Thunder Co.
+Author URL: http://littlethunder.co
+Version: 1.0
+*/
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+	
+	Eric Meyer					:: http://meyerweb.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+	
+-------------------------------------------------------------------------------*/
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+article, aside, figure, footer, header, hgroup, nav, section, details, summary {
+  display: block; }
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+img,
+object,
+embed {
+  max-width: 100%; }
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {
+  overflow-y: scroll; }
+
+/* we use a lot of ULs that aren't bulleted. 
+	don't forget to restore the bullets within content. */
+ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th {
+  font-weight: bold;
+  vertical-align: bottom; }
+
+td {
+  font-weight: normal;
+  vertical-align: top; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */ }
+
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+input[type="checkbox"] {
+  vertical-align: bottom; }
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline; }
+
+.ie6 input {
+  vertical-align: text-bottom; }
+
+select, input, textarea {
+  font: 99% sans-serif; }
+
+table {
+  font-size: inherit;
+  font: 100%; }
+
+small {
+  font-size: 85%; }
+
+strong {
+  font-weight: bold; }
+
+td, td img {
+  vertical-align: top; }
+
+/* Make sure sup and sub don't screw with your line-heights
+	gist.github.com/413930 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif; }
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer; }
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {
+  margin: 0; }
+
+/* make buttons play nice in IE */
+button {
+  width: auto;
+  overflow: visible; }
+
+/* scale images in IE7 more attractively */
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+/* prevent BG image flicker upon hover */
+.ie6 html {
+  filter: expression(document.execCommand("BackgroundImageCache", false, true)); }
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+/* COLOURS 
+------------------------------------------------------------------------------------------------------------------------------------------ */
+/* TYPOGRAPHY
+------------------------------------------------------------------------------------------------------------------------------------------ */
+body {
+  font-family: "Proxima Nova", "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #444; }
+
+.logo {
+  font-weight: normal;
+  font-size: 1.4em;
+  /* 30/16 */
+  display: inline-block;
+  border-radius: 8px;
+  padding: 7px 8px 4px;
+  border: 1px solid white;
+  color: white;
+  margin-bottom: 30px;
+  clear: both;
+  font-weight: 100; }
+  .logo:before {
+    content: "⌘";
+    font-size: 113%;
+    margin-top: -2px;
+    margin-right: -1px;
+    margin-bottom: -2px;
+    display: block;
+    float: left; }
+
+h2 {
+  font-size: 2.25em;
+  /* 36/16 */
+  color: white; }
+
+h3 {
+  color: #5cd4b9;
+  margin-bottom: 20px; }
+
+h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  /* 2/16 */
+  margin-bottom: 20px; }
+
+.date,
+.location {
+  color: #18876e; }
+
+.date {
+  font-size: 1.125em;
+  /* 18/16 */
+  letter-spacing: 0.0625em;
+  /* 1/16 */
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 0;
+  text-align: center; }
+
+.location {
+  font-size: 0.875em;
+  /* 14/16 */
+  font-weight: 600;
+  text-align: center; }
+
+.lead {
+  font-size: 1.25em;
+  /* 20/16 */
+  clear: both;
+  text-align: left; }
+
+header .lead {
+  padding-top: 30px; }
+
+em {
+  font-weight: 300; }
+
+p {
+  padding-bottom: 0.625em;
+  text-align: left; }
+
+/* 10/16 */
+.button {
+  border-radius: 8px;
+  padding: 10px 25px;
+  border: 1px solid white;
+  font-size: 1.125em;
+  /* 18/16 */
+  font-weight: 600;
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center; }
+
+a {
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  color: white;
+  text-decoration: none; }
+  a:hover {
+    color: #5cd4b9;
+    background-color: white; }
+
+section a {
+  color: #5cd4b9; }
+  section a:hover {
+    color: #2aa085; }
+
+small {
+  clear: both;
+  font-size: 0.625em;
+  /* 10/16 */
+  display: block;
+  text-align: center;
+  opacity: 0.5; }
+
+/* IMAGES
+------------------------------------------------------------------------------------------------------------------------------------------ */
+header {
+  background-image: url("../images/bg.png"); }
+
+.avatar {
+  border-radius: 50%; }
+
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px; }
+
+/* LAYOUT
+------------------------------------------------------------------------------------------------------------------------------------------ */
+header {
+  background-color: #5cd4b9;
+  padding: 40px 0 50px 0;
+  color: white;
+  margin-bottom: 50px;
+  text-align: center; }
+
+.container {
+  width: 640px;
+  margin: 0 auto; }
+
+section {
+  padding-bottom: 40px; }
+
+.column {
+  width: 30%;
+  margin-right: 3.3333%;
+  float: left;
+  margin-bottom: 20px; }
+
+footer {
+  background-color: #404040;
+  margin-top: 40px;
+  color: #969696;
+  padding: 40px 0; }
+  footer .host {
+    clear: both; }
+  footer .avatar {
+    width: 25%;
+    float: left;
+    margin-right: 15px; }
+  footer p, footer li {
+    padding-bottom: 0;
+    font-size: 0.875em;
+    /* 14/16 */ }
+  footer .name {
+    font-size: 1.25em;
+    /* 20/16 */ }
+  footer .company {
+    font-size: 0.75em;
+    /* 12/16 */
+    font-weight: bold; }
+
+/* LISTS
+------------------------------------------------------------------------------------------------------------------------------------------ */
+.sponsors {
+  margin: 20px 0; }
+  .sponsors img {
+    opacity: 0.8; }
+  .sponsors li {
+    width: 33.3333%;
+    float: left;
+    display: block; }
+
+/* USEFUL CLASSES
+------------------------------------------------------------------------------------------------------------------------------------------ */
+.last {
+  margin: 0; }
+
+.left {
+  float: right; }
+
+.right {
+  float: right; }
+
+/* CLEARFIX */
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+/* TYPOGRAPHY - http://typecast.com/blog/a-more-modern-scale-for-web-typography
+------------------------------------------------------------------------------------------------------------------------------------------ */
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5; }
+
+.container {
+  font-size: 1em;
+  /* equivalent to 16px */
+  line-height: 1.25;
+  /* equivalent to 20px */ }
+
+@media (min-width: 43.75em) {
+  .container {
+    font-size: 1em;
+    /* equivalent to 16px */
+    line-height: 1.375;
+    /* equivalent to 22px */ } }
+h1 {
+  font-size: 2em;
+  /* 2x body copy size = 32px */
+  line-height: 1.25;
+  /* 45px / 36px */ }
+
+@media (min-width: 43.75em) {
+  h1 {
+    font-size: 2.5em;
+    /* 2.5x body copy size = 40px */
+    line-height: 1.125; } }
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 3em;
+    /* 3x body copy size = 48px */
+    line-height: 1.05;
+    /* keep to a multiple of the 20px line height and something more appropriate for display headings */ } }
+h2 {
+  font-size: 1.625em;
+  /* 1.625x body copy size = 26px */
+  line-height: 1.15384615;
+  /* 30px / 26px */ }
+
+@media (min-width: 43.75em) {
+  h2 {
+    font-size: 2em;
+    /* 2x body copy size = 32px */
+    line-height: 1.25; } }
+@media (min-width: 56.25em) {
+  h2 {
+    font-size: 2.25em;
+    /* 2.25x body copy size = 36px */
+    line-height: 1.25; } }
+h3 {
+  font-size: 1.375em;
+  /* 1.375x body copy size = 22px */
+  line-height: 1.13636364;
+  /* 25px / 22px */ }
+
+@media (min-width: 43.75em) {
+  h3 {
+    font-size: 1.5em;
+    /* 1.5x body copy size = 24px */
+    line-height: 1.25; } }
+@media (min-width: 56.25em) {
+  h3 {
+    font-size: 1.75em;
+    /* 1.75x body copy size = 28px */
+    line-height: 1.25; } }
+h4 {
+  font-size: 1.125em;
+  /* 1.125x body copy size = 18px */
+  line-height: 1.11111111; }
+
+@media (min-width: 43.75em) {
+  h4 {
+    line-height: 1.22222222;
+    /* (22px / 18px */ } }
+blockquote {
+  font-size: 1.1em;
+  /* 20px / 16px */
+  line-height: 1.25;
+  /* 25px / 20px */ }
+
+@media (min-width: 43.75em) {
+  blockquote {
+    font-size: 1.5em;
+    /* 24px / 16px = */
+    line-height: 1.45833333;
+    /* 35px / 24px */ } }
+/* 700PX
+------------------------------------------------------------------------------------------------------------------------------------------ */
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 90%; }
+
+  .sponsors li {
+    width: 30%;
+    margin-right: 1.3333%;
+    text-align: center; } }
+/* 600PX
+------------------------------------------------------------------------------------------------------------------------------------------ */
+@media only screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    text-align: center; }
+    .column p {
+      text-align: center; }
+    .column .avatar {
+      float: none;
+      clear: both;
+      width: 40%;
+      margin: 10px 0 10px 0; }
+    .column .host {
+      width: 50%;
+      float: left;
+      clear: none; } }
+/* 600PX
+------------------------------------------------------------------------------------------------------------------------------------------ */
+@media only screen and (max-width: 450px) {
+  .sponsors li {
+    width: 100%;
+    margin-right: 1.3333%;
+    text-align: center; }
+
+  .column .avatar {
+    width: 50%; } }
