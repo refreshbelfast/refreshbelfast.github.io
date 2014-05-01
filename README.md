@@ -8,6 +8,6 @@ Upcoming Refresh Belfast website. Currently under development.
 + Make logo an SVG - If you visit on a Mac serve cmd+r and if on PC ctrl+r?
 + Make sponsors logos SVG
 + Add social icons and link
-+ Confirm dates
++ Confirm dates after June
 + Add first speaker's blurb and avatar
 + Add Analytics
