@@ -1,5 +1,4 @@
-Refresh Belfast
-===============
+#Refresh Belfast
 
 Upcoming Refresh Belfast website. Currently under development.
 
@@ -11,3 +10,4 @@ Upcoming Refresh Belfast website. Currently under development.
 + Confirm dates after June
 + Add first speaker's blurb and avatar
 + Add Analytics
++ Setup [custom domain](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages)
