@@ -16,7 +16,6 @@ body {
 	}
 
 .logo {
-	font-weight: normal;
 	font-size: 1.4em; /* 30/16 */
 	display: inline-block;
 	border-radius: 8px;
@@ -37,6 +36,21 @@ body {
 		float: left;
 		}
 	}
+
+// .logo {
+// 	text-indent: -9999;
+// 	display: inline-block;
+// 	border-radius: 6px;
+// 	padding: 4px 10px;
+// 	border: 1px solid white; /* 1/16 */
+// 	color: white;
+// 	margin-bottom: 30px;
+// 	clear: both;
+// 	background: url(../images/refresh_belfast_logo.svg) center center no-repeat;
+// 	background-size: 70%;
+// 	height: 25px;	
+// 	width: 25px;
+// 	}
 
 h2 {
 	font-size: 2.25em; /* 36/16 */
