@@ -140,6 +140,7 @@ small {
 	display: block;
 	text-align: center;
 	opacity: 0.5;
+	padding-top: 40px;
 	}
 
 
@@ -206,6 +207,10 @@ footer {
 	p, li {
 		padding-bottom: 0;
 		font-size: 0.875em; /* 14/16 */
+		}
+
+	li {
+		margin: 5px 0;
 		}
 
 	.name {

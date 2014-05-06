@@ -295,7 +295,8 @@ small {
   /* 10/16 */
   display: block;
   text-align: center;
-  opacity: 0.5; }
+  opacity: 0.5;
+  padding-top: 40px; }
 
 /* IMAGES
 ------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -347,6 +348,8 @@ footer {
     padding-bottom: 0;
     font-size: 0.875em;
     /* 14/16 */ }
+  footer li {
+    margin: 5px 0; }
   footer .name {
     font-size: 1.25em;
     /* 20/16 */ }
