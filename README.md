@@ -8,6 +8,7 @@ Upcoming Refresh Belfast website. Currently under development.
 + Make sponsors logos SVG
 + Add social icons to elsewhere
 + Confirm dates after June
-+ Add first speaker's blurb and avatar
-+ Add Analytics
++ ~~Add Typekit~~
++ ~~Add first speaker's blurb and avatar~~
++ ~~Add Analytics~~
 + Setup [custom domain](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages)
