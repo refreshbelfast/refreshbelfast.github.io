@@ -222,10 +222,13 @@ footer {
 		font-weight: bold;
 		}
 
-	a:hover {
-		color: white;
-		background: none;
-		border-bottom: 1px solid white;
+	a {
+		color: #969696;
+		&:hover {
+			color: white;
+			background: none;
+			border-bottom: 1px solid white;
+			}
 		}
 	}
 

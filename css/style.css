@@ -357,10 +357,12 @@ footer {
     font-size: 0.75em;
     /* 12/16 */
     font-weight: bold; }
-  footer a:hover {
-    color: white;
-    background: none;
-    border-bottom: 1px solid white; }
+  footer a {
+    color: #969696; }
+    footer a:hover {
+      color: white;
+      background: none;
+      border-bottom: 1px solid white; }
 
 /* LISTS
 ------------------------------------------------------------------------------------------------------------------------------------------ */
