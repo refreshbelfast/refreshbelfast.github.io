@@ -194,7 +194,9 @@ button {
 body {
   font-family: "Proxima Nova", "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   -webkit-font-smoothing: antialiased;
-  color: #444; }
+  color: #444;
+  background: url("../images/bg.png") fixed;
+  background-color: #5cd4b9; }
 
 .logo {
   text-indent: -9999;
@@ -300,9 +302,6 @@ small {
 
 /* IMAGES
 ------------------------------------------------------------------------------------------------------------------------------------------ */
-header {
-  background-image: url("../images/bg.png"); }
-
 .avatar {
   border-radius: 50%; }
 
@@ -314,18 +313,19 @@ img {
 /* LAYOUT
 ------------------------------------------------------------------------------------------------------------------------------------------ */
 header {
-  background-color: #5cd4b9;
   padding: 40px 0 50px 0;
   color: white;
-  margin-bottom: 50px;
   text-align: center; }
+
+section {
+  background-color: white;
+  padding-bottom: 40px; }
+  section.about {
+    padding-top: 50px; }
 
 .container {
   width: 640px;
   margin: 0 auto; }
-
-section {
-  padding-bottom: 40px; }
 
 .column {
   width: 30%;
@@ -335,7 +335,6 @@ section {
 
 footer {
   background-color: #404040;
-  margin-top: 40px;
   color: #969696;
   padding: 40px 0; }
   footer .host {
