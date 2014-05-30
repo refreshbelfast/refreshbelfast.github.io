@@ -4,18 +4,17 @@
 
 @media only screen and (max-width:700px) {
 
-	.container {
-		width:90%
+.container {
+	width:90%
 	}
 
-	.sponsors {
-		li {
-			width: 30%;
-			margin-right: 1.3333%;
-			text-align: center;
-			
-			}
+.sponsors {
+	li {
+		width: 30%;
+		margin-right: 1.3333%;
+		text-align: center;
 		}
+	}
 
 }
 
@@ -23,24 +22,43 @@
 ------------------------------------------------------------------------------------------------------------------------------------------ */
 
 @media only screen and (max-width:600px) {
-	.column {
-		width: 100%;
-		text-align: center;
 
-		p {text-align: center;}
+.column {
+	width: 100%;
+	text-align: center;
 
-		.avatar {
-			float: none;
-			clear: both;
-			width: 40%;
-			margin: 10px 0 10px 0;
+	p {text-align: center;}
+
+	.avatar {
+		float: none;
+		clear: both;
+		width: 40%;
+		margin: 10px 0 10px 0;
+	}
+
+	.host {
+		width: 50%;
+		float: left;
+		clear: none;
 		}
+	}
 
-		.host {
-			width: 50%;
-			float: left;
-			clear: none;
+footer {
+	li {
+		&.twitter,
+		&.flickr,
+		&.youtube {
+			background-size: 7%;
+			padding-left: 0px;
+			background-position: top center;
+			padding-top: 30px;
+			margin-bottom: 10px;
+
+			& a {
+				padding-top: 30px;
+				}
 			}
+		}
 	}
 
 
@@ -52,17 +70,17 @@
 
 @media only screen and (max-width:450px) {
 
-	.sponsors {
-		li {
-			width: 100%;
-			margin-right: 1.3333%;
-			text-align: center;
-			
-			}
+.sponsors {
+	li {
+		width: 100%;
+		margin-right: 1.3333%;
+		text-align: center;
 		}
-	.column {
-		.avatar {
-			width: 50%;
+	}
+
+.column {
+	.avatar {
+		width: 50%;
 		}
 	}
 }

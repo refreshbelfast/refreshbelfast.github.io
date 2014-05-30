@@ -189,6 +189,8 @@ button {
 
 /* COLOURS 
 ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* MIXINS
+------------------------------------------------------------------------------------------------------------------------------------------ */
 /* TYPOGRAPHY
 ------------------------------------------------------------------------------------------------------------------------------------------ */
 body {
@@ -349,6 +351,18 @@ footer {
     /* 14/16 */ }
   footer li {
     margin: 5px 0; }
+    footer li.twitter {
+      background: url("../images/icons/twitter.svg") no-repeat top left;
+      background-size: 8%;
+      padding-left: 20px; }
+    footer li.flickr {
+      background: url("../images/icons/flickr.svg") no-repeat top left;
+      background-size: 8%;
+      padding-left: 20px; }
+    footer li.youtube {
+      background: url("../images/icons/youtube.svg") no-repeat top left;
+      background-size: 8%;
+      padding-left: 20px; }
   footer .name {
     font-size: 1.25em;
     /* 20/16 */ }
@@ -506,7 +520,16 @@ blockquote {
     .column .host {
       width: 50%;
       float: left;
-      clear: none; } }
+      clear: none; }
+
+  footer li.twitter, footer li.flickr, footer li.youtube {
+    background-size: 7%;
+    padding-left: 0px;
+    background-position: top center;
+    padding-top: 30px;
+    margin-bottom: 10px; }
+    footer li.twitter a, footer li.flickr a, footer li.youtube a {
+      padding-top: 30px; } }
 /* 600PX
 ------------------------------------------------------------------------------------------------------------------------------------------ */
 @media only screen and (max-width: 450px) {
