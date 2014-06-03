@@ -288,6 +288,11 @@ a {
     color: #5cd4b9;
     background-color: white; }
 
+header a {
+  border-bottom: 1px solid white;
+  opacity: 0.8;
+  padding: 0 2px; }
+
 section a {
   color: #5cd4b9; }
   section a:hover {
