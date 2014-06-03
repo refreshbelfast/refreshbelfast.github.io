@@ -300,8 +300,8 @@ section a {
 
 small {
   clear: both;
-  font-size: 0.625em;
-  /* 10/16 */
+  font-size: 0.75em;
+  /* 12/16 */
   display: block;
   text-align: center;
   opacity: 0.5;
