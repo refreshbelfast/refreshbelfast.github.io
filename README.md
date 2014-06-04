@@ -1,6 +1,6 @@
 #Refresh Belfast
 
-Upcoming Refresh Belfast website. Currently under development.
+Repo for the [Refresh Belfast](http://refreshbelfast.com/) website.
 
 ###Tim's to-do:
 
