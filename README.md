@@ -4,7 +4,7 @@ Repo for the [Refresh Belfast](http://refreshbelfast.com/) website.
 
 ###Tim's to-do:
 
-+ Refine Brand
++ ~~Refine Brand~~
 + Make sponsors logos SVG
 + ~~Add social icons to elsewhere~~
 + Confirm dates after June
