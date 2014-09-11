@@ -260,9 +260,16 @@ footer {
 		}
 
 	li {
-		width: 33.3333%;
+		width: 50%;
 		float: left;
 		display: block;
+		text-align: center;
+		&.main {
+			clear: both;
+			width: 45%;
+			float: none;
+			margin: 0 auto;
+			}
 		}
 	}	
 
