@@ -5,7 +5,7 @@ $fresh: 	#5cd4b9;
 $green: 	#18876e;
 
 
-/* MIXINS
+/* VARIABLES
 ------------------------------------------------------------------------------------------------------------------------------------------ */
 
 @mixin icon-size {
@@ -93,7 +93,10 @@ em {
 	font-weight: 300;
 	}
 
-p {padding-bottom: 0.625em; text-align: left;} /* 10/16 */
+p {
+	padding-bottom: 0.625em; 
+	text-align: left;
+	} /* 10/16 */
 
 .button {
 	border-radius: 8px;
@@ -145,6 +148,7 @@ small {
 
 .avatar {
 	border-radius: 50%;
+	width: 128px;
 	}
 
 img {
