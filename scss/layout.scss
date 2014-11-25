@@ -1,7 +1,8 @@
 /* COLOURS 
 ------------------------------------------------------------------------------------------------------------------------------------------ */
 
-$fresh: 	#5cd4b9;
+// $fresh: 	#5cd4b9;
+$fresh:		#ED3628; //Christmas Red
 $green: 	#18876e;
 
 
@@ -22,8 +23,11 @@ body {
 	font-family: "Proxima Nova", "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	color: #444;
-	background: url("../images/bg.png") fixed;
-	background-color:$fresh;
+	// background: url("../images/bg.png") fixed;
+	background: url("../images/bg-christmas.png") fixed;
+	// background-color: $fresh;
+	background-color: lighten($fresh, 10%);
+
 	}
 
 .logo {
@@ -60,7 +64,8 @@ h4 {
 
 .date, 
 .location {
-	color: $green;
+	// color: $green;
+	color: #b0261c;
 	}
 
 .date {
@@ -256,7 +261,7 @@ footer {
 		// filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
   		// filter: gray; /* IE6-9 */
  		// -webkit-filter: grayscale(1);
-    	opacity: 0.8;
+    	opacity: 0.9;
 		}
 
 	li {
@@ -270,6 +275,10 @@ footer {
 			float: none;
 			margin: 0 auto;
 			}
+		}
+
+	.lt {
+		width:200px;
 		}
 	}	
 
